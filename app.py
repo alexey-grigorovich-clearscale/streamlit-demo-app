@@ -1,13 +1,22 @@
+# Import the necessary libraries
 import streamlit as st
 import pandas as pd
 import numpy as np
 
+# First, let's display page title and a welcome message
 # Title
 st.title('Streamlit Demo App')
 
-# Text
+# Regular paragaph text
 st.write("This is a simple demo of Streamlit's capabilities.")
 
+# Streamlit also supports top navs, sidebars, and more layout and typography options.
+
+# Second, let's generate a mock dataset of squares of numbers between 1 and 10, and
+# display it as a table as well as a line chart.
+#
+# In practice, the data may come from a database, a CSV file on S3, or a call to an external API.
+#
 # Data
 data = pd.DataFrame({
     'numbers': range(1, 11),
